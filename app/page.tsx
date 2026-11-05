@@ -19,7 +19,12 @@ export default function Home() {
               <p>{project.context}</p>
               {project.badge && <p>🏆 {project.badge}</p>}
               <p>{project.hook}</p>
-              {project.description && <p>{project.description}</p>}
+              <p>(project.description)</p>
+              {project.reflection && (
+                <p>
+                  <strong>{project.reflection.label}:</strong> {project.reflection.text}
+                </p>
+              )}
 
               <ul>
                 {project.tools.map((tool) => (
