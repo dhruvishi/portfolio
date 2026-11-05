@@ -1,4 +1,4 @@
-import { about, projects } from "@/data/content";
+import { about, projects, experience } from "@/data/content";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
               <p>{project.context}</p>
               {project.badge && <p>🏆 {project.badge}</p>}
               <p>{project.hook}</p>
-              <p>{project.description}</p>
+              {project.description && <p>{project.description}</p>}
 
               <ul>
                 {project.tools.map((tool) => (
@@ -30,6 +30,29 @@ export default function Home() {
 
           ))
         }
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        {
+          experience.map((experience) => (
+            <article key={experience.company}>
+              <h3>{experience.company}</h3>
+              <p>{experience.role}</p>
+              <p>{experience.dates}</p>
+              <p>{experience.location}</p>
+              <p>{experience.hook}</p>
+
+              <ul>
+                {experience.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </article>
+
+          ))
+        }
+
       </section>
     </main>
   );
