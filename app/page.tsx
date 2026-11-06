@@ -8,7 +8,17 @@ export default function Home() {
 
       {about.paragraphs.map((paragraph) => (
         <p key={paragraph}>{paragraph}</p>
+
       ))}
+
+      <h3>Facts</h3>
+
+      <ul>
+        {about.facts.map((fact) => (
+          <li key={fact}>{fact}</li>
+        ))}
+      </ul>
+
 
       <section>
         <h2>Projects</h2>
@@ -59,6 +69,14 @@ export default function Home() {
         }
 
       </section>
+
+      <section>
+        <h2>Contact</h2>
+        <a href={about.linkedin}>LinkedIn</a>
+
+        <a href={`mailto:${about.email}`}>Email</a>
+      </section>
+
     </main>
   );
 }

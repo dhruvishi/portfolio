@@ -8,7 +8,6 @@ export const about = {
         "Whatever I’m working on, I try to do it with purpose and be real about who I am. Usually that means jumping in and taking the lead: running a 238-member robotics club, writing for our college newsletter, heading marketing and PR for Falak, our college’s flagship fest.",
         "And when I’m not doing any of that, I’m probably planning my next trip, at the gym, deep in a murder mystery, or watching reality tv trying to work out who isn’t being real."
     ],
-
     facts: ["Bengaluru", "CGPA:8.94", "IGCSE: 8A*", "CBSE: 90%"],
     email: "dhruvishia@gmail.com",
     linkedin: "https://www.linkedin.com/in/dhruvishi-amin-4201a1299/",
